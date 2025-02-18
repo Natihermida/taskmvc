@@ -2,6 +2,7 @@
 namespace Formacom\controllers;
 use Formacom\core\Controller;
 use Formacom\models\Task;
+require_once("./core/Controller.php");
 
 class HomeController extends Controller{
     public function index(...$params){
