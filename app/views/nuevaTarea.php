@@ -9,8 +9,15 @@
 <body>
     <h3>Nueva Tarea</h3>
     <form action="" method="post">
-        <input type="text" name="descripcion" placeholder="Descripción de la tarea" required>
+       <input type="text" name="titulo" placeholder ="titulo"> 
+       <input type="text" name="descripcion" placeholder="Descripción de la tarea" required>
+       <input type="date" name="fecha_inicio" placeholder ="fecha_inicio">
+       <input type="date" name="fecha_fin" placeholder ="fecha_fin">
+
+
+   
         <input type="submit" value="Agregar Tarea">
+
     </form>
 </body>
 </html>

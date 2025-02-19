@@ -14,7 +14,8 @@
 
 
         <form action='' method='post'>
-            <input type='text' name='descripcion' value='<?=$data->descripcion?>' required>
+            <input type="text" name="titulo" value="<?=$data->titulo?>">
+            <input type='text' name='descripcion' value='<?= $data->descripcion?>' required>
             <input type='submit' value='Guardar cambios'>
         </form>
  
