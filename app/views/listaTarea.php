@@ -11,7 +11,7 @@
     <!-- Mostrar las tareas -->
     <?php
     foreach($data as $tarea){
-        echo "<p>".$tarea->descripcion." <a href='home/edit/".$tarea->tareas_id."'>Editar</a> | <a href='index.php?action=eliminar&id=".$tarea->id."' onclick='return confirm(\"¿Estás seguro de eliminar esta tarea?\");'>Eliminar</a></p>";
+        echo "<p>".$tarea->descripcion." <a href='/apptaskmvc/task/edit/".$tarea->tareas_id."'>Editar</a> | <a href='index.php?action=eliminar&id=".$tarea->id."' onclick='return confirm(\"¿Estás seguro de eliminar esta tarea?\");'>Eliminar</a></p>";
     }
     ?>
 

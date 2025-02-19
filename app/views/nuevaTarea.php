@@ -7,7 +7,7 @@
 </head>
 <body>
     <h3>Nueva Tarea</h3>
-    <form action="index.php?action=agregar" method="post">
+    <form action="" method="post">
         <input type="text" name="descripcion" placeholder="Descripción de la tarea" required>
         <input type="submit" value="Agregar Tarea">
     </form>

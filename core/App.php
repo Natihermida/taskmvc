@@ -3,7 +3,7 @@ namespace Formacom\Core;
 use Formacom\Core\Database;
 //controlador por defecto, se puede hacer aqui o en el constructor de la clase App
 class App{
-    protected $controller="Formacom\\Controllers\\HomeController";//controlador por defecto
+    protected $controller="Formacom\\Controllers\\TaskController";//controlador por defecto
     protected $method="index";//metodo por defecto
     protected $params=[];//parametros por defecto
 
@@ -31,7 +31,7 @@ class App{
             if(isset($_GET['url'])) {//si se ha pasado una url
                 return explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
             }//devuelve un array con los elementos de la url
-            return ['home', "index"];//si no se ha pasado una url, devuelve el controlador por defecto
+            return ['task', "index"];//si no se ha pasado una url, devuelve el controlador por defecto
         }
     }
 
