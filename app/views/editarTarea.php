@@ -14,10 +14,10 @@
         <form action='' method='post'>
             <input type='text' name='descripcion' value='<?=$data->descripcion?>' required>
             <input type='submit' value='Guardar cambios'>
-        </form>";
+        </form>
  
 
     <br>
-    <a href="index.php">Volver a la lista de tareas</a>
+    
 </body>
 </html>

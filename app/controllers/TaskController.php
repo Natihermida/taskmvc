@@ -6,7 +6,7 @@ use Formacom\models\User;
 
 class TaskController extends Controller{
     public function index(...$params){
-        $data=["mensaje"=>"Hola desde Index de HomeController"];
+        $data=["mensaje"=>"Hola desde Index de TaskController"];
         $tareas=Task::all();
         //$user=User::all();
         //
@@ -32,7 +32,11 @@ class TaskController extends Controller{
         $this->view("nuevaTarea");
     }
 
-
+    public function delete(...$params){
+        $tarea=Task::find($params[0]);
+        $tarea->delete();
+        header("Location: /apptaskmvc");
+    }
 
 }
 

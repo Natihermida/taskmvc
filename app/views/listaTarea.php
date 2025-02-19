@@ -11,11 +11,11 @@
     <!-- Mostrar las tareas -->
     <?php
     foreach($data as $tarea){
-        echo "<p>".$tarea->descripcion." <a href='/apptaskmvc/task/edit/".$tarea->tareas_id."'>Editar</a> | <a href='index.php?action=eliminar&id=".$tarea->id."' onclick='return confirm(\"¿Estás seguro de eliminar esta tarea?\");'>Eliminar</a></p>";
+        echo "<p>".$tarea->descripcion." <a href='/apptaskmvc/task/edit/".$tarea->tareas_id."'>Editar</a> | <a href='/apptaskmvc/task/delete/".$tarea->tareas_id."' onclick='return confirm(\"¿Estás seguro de eliminar esta tarea?\");'>Eliminar</a></p>";
     }
     ?>
 
     <br>
-    <a href="index.php?action=nueva_tarea">Agregar nueva tarea</a>
+    <a href="/apptaskmvc/task/new/">Agregar nueva tarea</a>
 </body>
 </html>
