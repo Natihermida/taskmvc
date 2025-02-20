@@ -2,9 +2,9 @@
 namespace Formacom\models;
 use Illuminate\Database\Eloquent\Model;//uso el namespace de la clase Model
 
-class Task extends Model{
-    protected $table="tareas";
-    protected $primaryKey="tareas_id";
+class Contacto extends Model{
+    protected $table="contactos";
+    protected $primaryKey="id_contactos";
     public $timestamps=false;
 }
 

@@ -3,7 +3,7 @@ namespace Formacom\Core;
 use Formacom\Core\Database;
 //controlador por defecto, se puede hacer aqui o en el constructor de la clase App
 class App{
-    protected $controller="Formacom\\Controllers\\TaskController";//controlador por defecto
+    protected $controller="Formacom\\Controllers\\agendaController";//controlador por defecto
     protected $method="index";//metodo por defecto
     protected $params=[];//parametros por defecto
 

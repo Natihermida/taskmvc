@@ -9,6 +9,6 @@
 <body>
     <h1><?php echo $mensaje; ?></h1> <!-- Mensaje de confirmación -->
 
-    <a href="index.php">Volver a la lista de tareas</a> <!-- Enlace para regresar a la lista -->
+    <a href="index.php">Volver a la lista de contactos</a> <!-- Enlace para regresar a la lista -->
 </body>
 </html>
